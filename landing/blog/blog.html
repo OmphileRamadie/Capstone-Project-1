@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!--linking the bootstrap CDN to my HTML file-->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--linking the fontAwesome CDN to my HTML file, this cdn allows me to use icons in my file-->
+
+    <link rel="stylesheet" href="main1.css" type="text/css" />
+    <!--Linking my external css file to my html file-->
+
+    <title>Statiic./blog</title>
+    <!--The title of my webpage-->
+
+    <link rel="icon" type="image/ico" href="images/statiicIcon.jpg" />
+    <!--This changes the title icon-->
+  </head>
+  <body>
+    <div class="container bg-light">
+      <!--This class allows us to have a grid container and adds some margin on the left 
+        and right and contains all my catalogue items-->
+      <!--The bg-light class makes the background color of the container to be a light gray -->
+
+      <div class="row">
+        <!--The first row of the grid-->
+        <div class="col">
+          <!--The first column of the first row-->
+          <nav class="navi bg-light pb-3">
+            <!--The navi class is my class that allows me to style my navigation bar in my css file,
+          the bg-light class makes the background color of the container to be a light gray-->
+            <!--The pb-3 class adds a padding bottom to the navigation bar-->
+
+            <h2 class="ml-3 logo" id="theHeading">Statiic.</h2>
+            <!--This acts as my logo, i used a heading instead of an image, added a logo class
+            so that i can style it in my css file-->
+            <!--The The ml-3 class adds margin left to the heading-->
+            <!--The id: #idHeading allows me to link the 'back to top' at the bottom of my page
+            to this heading. so when i press the 'back to top' button, it will take me to this heading -->
+
+            <ul class="nav-links">
+              <!--The beginning of the Unordered list, with a class of 'nav-links'which allows me to
+            customize my list in css-->
+
+              <li><a href="#">Home</a></li>
+              <!--First list item -->
+              <li><a href="#">Contact</a></li>
+              <!--Second list item -->
+              <li class="active"><a href="#">Blog</a></li>
+              <!--Third list item with active class which allows me to change the styling of this list item-->
+            </ul>
+
+            <button class="btn bt1 mr-3">Register</button>
+            <!--The register button in my navigation bar with class 'btn bt1' -->
+            <!--The mr-3 class adds margin right to this button -->
+
+            <button class="btn bt2 mr-3">Login</button>
+            <!--The Login button in my navigation bar with class 'btn bt1' -->
+            <!--The mr-3 class adds margin right to this button -->
+
+            <a href="cart.html" class="cart">
+              <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+              <!--The shopping cart icon -->
+
+              <span class="quantity">0</span>
+              <!--Displays the number of items in the cart-->
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--The second row of the grid -->
+
+        <div class="col-sm text-center">
+          <!--First column of the second row. The 'col-sm' class is the size of the column which is small. The 'Text-center class'
+          centers the contents of the column -->
+
+          <img src="images/Airmax1.jpg" alt="Air Max 1" class="image" />
+          <!--An image about the blog post withe class of 'image'-->
+        </div>
+        <div class="col-sm">
+          <!--second column of the first row-->
+
+          <p style="font-size: small;">4 March</p>
+          <!--This inline css styling of the p tag makes all the text within the paragraph tags smaller in size-->
+
+          <h3 class="mb-3">Nike Air Max 1 - 'DNA'</h3>
+          <!--The class mb adds a margin bottom to the heading 3 tag-->
+
+          <p style="font-size: small;" class="mb-5">
+            Honoring Tinker Hatfield's most iconic design, the Air Max 1 arrives
+            in the OG <br />
+            'Purple Punch' colourway that was first seen on Tinker's Huarache
+            design. <br />
+            The Air Max 1 translates elements of the 'Purple Punch' mostly
+            throughout the heel <br />
+            areas as the focal hue lines the rear paneling and sock... <br />
+          </p>
+          <!--The class mb adds a margin bottom to this paragraph tag and the inline styling makes
+          the text within the paragraph tags smaller-->
+
+          <a
+            href="https://www.shelflife.co.za/blogdetail/Nike-Air-Max-1-DNA"
+            class="btn bt animate"
+            >Read more</a
+          >
+          <!--An a tag with the external link and  a class 'btn' bt -->
+        </div>
+      </div>
+
+      <div class="row mt-4  border-top 2px pt-3">
+        <!--Third row of the grid. This row has a class of border-top 2px which adds a border to the top of the row of
+        2px and it is solid. The pt-3 class adds some padding top to the row, to create some room between the border
+         and the inner contents of the row-->
+
+        <div class="col-sm text-center">
+          <!--First column of the third row-->
+          <img
+            src="images/airmax90Art.png"
+            alt="Air Max 90 Art"
+            class="image"
+          />
+        </div>
+        <div class="col-sm">
+          <!--second column of the third row-->
+
+          <p style="font-size: small;">6 March</p>
+          <h3 class="mb-3">Honorroller's Blocky Sneaker Sculptures</h3>
+          <p style="font-size: small;" class="mb-5">
+            Artist Christopher Chan, better known as Honorroller, presents his
+            first <br />
+            interactive exhibition with a heavy dose of sneaker sculptures.
+            <br />
+            If his work looks familiar, you might have seen it as the trophy for
+            <br />
+            MTV's new Sneaker Wars series. Titled As Long as I’ve Got My Health,
+            <br />
+            and My Millions of...
+          </p>
+
+          <a
+            href="https://www.shelflife.co.za/blogdetail/Honorroller-s-Blocky-Sneaker-Sculptures"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+
+      <div class="row mt-4 border-top 2px pt-3">
+        <!--Fourth row of the grid-->
+
+        <div class="col-sm text-center">
+          <!--First column of the fourth row-->
+          <img
+            src="images/supremeMag.png"
+            alt="Supreme magazine"
+            class="image"
+          />
+        </div>
+        <div class="col-sm">
+          <!--second column of the fourth row-->
+          <p style="font-size: small;">7 March</p>
+          <h3 class="mb-3">
+            25 Years of Supreme Accessories with 'Object Oriented' Book
+          </h3>
+          <p style="font-size: small;" class="mb-5">
+            Perfect for your coffee table and the flex, Object Oriented takes a
+            look at all the <br />
+            weird and wonderful accessories released by Supreme from 1994 to
+            2018. <br />
+            This hardcover follows Design critic Byron Hawes' Art on Deck
+            version that looked at <br />
+            Supreme's skate deck designs throughout the years. Object...
+          </p>
+
+          <a
+            href="https://www.shelflife.co.za/blogdetail/25-Years-of-Supreme-Accessories-with-Object-Oriented-Book"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="row mt-4 border-top 2px border-bottom 2px pt-3 pb-3">
+        <!--Fourth row of the grid-->
+        <div class="col-sm text-center">
+          <!--First column of the fourth row-->
+
+          <img src="images/Airjordan2.jpg" alt="Air Jordan 2" class="image" />
+        </div>
+        <div class="col-sm">
+          <!--second column of the fourth row-->
+          <p style="font-size: small;">4 March</p>
+          <h3 class="mb-3">
+            WMNS Air Jordan 2 - 'Rivals'
+          </h3>
+          <p style="font-size: small;" class="mb-5">
+            Jordan Brand releasing a brand new Air Jordan 2 'Rivals' for women,
+            seeing a wild <br />
+            multi-coloured makeover. Dressed in a University Red, Black, and
+            Court Purple <br />
+            color scheme. This Air Jordan 2 resembles the team colors of the
+            Lakers, Knicks, <br />
+            Celtics, and Blazers as a nod to Michael Jordan’s...
+          </p>
+          <a
+            href=" https://www.shelflife.co.za/blogdetail/WMNS-Air-Jordan-2-Rivals"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+
+      <div class="row text-center mt-5">
+        <!--Fifth row of the grid-->
+
+        <div class="col">
+          <!--First column of the fifth row-->
+          <a href="#theHeading" class="btn bt bt3">Back To Top</a>
+          <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page to my logo
+          at the top of the page  -->
+        </div>
+      </div>
+    </div>
+
+    <script src="main2.js"></script>
+    <!--Linking external javaScript file to this HTML file-->
+  </body>
+</html>
